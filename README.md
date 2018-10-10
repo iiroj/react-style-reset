@@ -11,9 +11,6 @@
   <a href="https://gitlab.com/iiroj/react-style-reset">
     <img src="https://img.shields.io/github/languages/code-size/iiroj/react-style-reset.svg">
   </a>
-  <a href="https://gitlab.com/iiroj/react-style-reset/commits/master">
-    <img alt="pipeline status" src="https://gitlab.com/iiroj/react-style-reset/badges/master/pipeline.svg" />
-  </a>
   <a href="https://gitlab.com/iiroj/react-style-reset/blob/master/package.json">
     <img src="https://img.shields.io/david/iiroj/react-style-reset.svg">
   </a>
