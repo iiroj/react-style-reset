@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://gitlab.com/iiroj/react-style-reset/compare/v0.2.0...v0.2.1) (2018-10-17)
+
+
+### Bug Fixes
+
+* use correct glob pattern to include files ([88a143e](https://gitlab.com/iiroj/react-style-reset/commit/88a143e))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://gitlab.com/iiroj/react-style-reset/compare/v0.1.4...v0.2.0) (2018-10-17)
 
