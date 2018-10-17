@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { injectGlobal } from 'emotion';
+import { injectGlobal } from "emotion";
 
-import reset from '../';
+import reset from "../";
 
 injectGlobal(reset);
 
