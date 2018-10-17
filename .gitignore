@@ -1,7 +1,5 @@
 /.cache
 /node_modules
 /dist
-/index.d.ts
-/index.js
-/string.js
-/string.d.ts
+/*.d.ts
+/*.js

@@ -8,17 +8,14 @@
   "repository": "gitlab:iiroj/react-style-reset",
   "bugs": "https://gitlab.com/iiroj/react-style-reset/issues",
   "main": "index.js",
-  "types": "index.d.ts",
   "files": [
-    "index.d.ts",
-    "index.js",
-    "string.d.ts",
-    "string.js"
+    "./*.d.ts",
+    "./*.js"
   ],
   "scripts": {
     "start": "parcel example/index.html",
     "lint": "tslint -p tsconfig.json",
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc --build tsconfig.json",
     "version": "standard-version",
     "prerelease": "npm run lint && npm run build",
     "release": "git push --follow-tags origin master",

@@ -4,12 +4,17 @@
     "esModuleInterop": true,
     "jsx": "react",
     "lib": ["dom", "es6"],
-    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "pretty": true,
     "removeComments": true,
     "strict": true,
     "target": "es5"
-  }
+  },
+  "include": [
+    "./index.ts",
+    "./string.ts",
+    "./reset.css.object.ts",
+    "./reset.css.string.ts"
+  ]
 }
