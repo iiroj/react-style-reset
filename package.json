@@ -9,8 +9,8 @@
   "bugs": "https://gitlab.com/iiroj/react-style-reset/issues",
   "main": "index.js",
   "files": [
-    "./*.d.ts",
-    "./*.js"
+    "*.d.ts",
+    "*.js"
   ],
   "scripts": {
     "start": "parcel example/index.html",
