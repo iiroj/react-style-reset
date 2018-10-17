@@ -1,1 +1,1 @@
-export { default } from "./reset.css.string";
+export { default, default as reset } from "./reset.css.string";

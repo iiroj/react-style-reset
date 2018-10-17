@@ -1,1 +1,1 @@
-export { default } from "./reset.css.object";
+export { default, default as reset } from "./reset.css.object";
