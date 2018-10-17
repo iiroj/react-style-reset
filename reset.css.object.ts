@@ -1,31 +1,10 @@
-// Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
-// TypeScript Version: 2.3
-
-import * as CSS from "csstype";
-
-type CSSBaseObject = CSS.PropertiesFallback<number | string>;
-type CSSPseudoObject = { [K in CSS.Pseudos]?: CSSObject };
-interface CSSOthersObject {
-  [propertiesName: string]: Interpolation;
-}
-interface CSSObject extends CSSBaseObject, CSSPseudoObject, CSSOthersObject {}
-
-interface ArrayInterpolation extends Array<Interpolation> {}
-
-type Interpolation =
-  | undefined
-  | null
-  | boolean
-  | string
-  | number
-  | CSSObject
-  | ArrayInterpolation;
+import { Interpolation } from "./index";
 
 // http://meyerweb.com/eric/tools/css/reset/
 // v2.0 | 20110126
 // License: none (public domain)
 
-const generics: CSSObject = {
+const generics = {
   margin: 0,
   padding: 0,
   border: 0,
@@ -34,19 +13,19 @@ const generics: CSSObject = {
   verticalAlign: "baseline"
 };
 
-const displayBlock: CSSObject = {
+const displayBlock = {
   display: "block"
 };
 
-const listStyleNone: CSSObject = {
+const listStyleNone = {
   listStyle: "none"
 };
 
-const contentNone: CSSObject = {
+const contentNone = {
   content: "none"
 };
 
-const quotesNone: CSSObject = {
+const quotesNone = {
   quotes: "none"
 };
 
