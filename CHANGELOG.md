@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://gitlab.com/iiroj/react-style-reset/compare/v0.1.4...v0.2.0) (2018-10-17)
+
+
+### Features
+
+* **normalize:** add normalize.css ([2d04dc0](https://gitlab.com/iiroj/react-style-reset/commit/2d04dc0))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://gitlab.com/iiroj/react-style-reset/compare/v0.1.3...v0.1.4) (2018-10-17)
 

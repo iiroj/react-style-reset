@@ -1,6 +1,6 @@
 {
   "name": "react-style-reset",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "An object-style CSS Reset for React",
   "license": "MIT",
   "author": "Iiro Jäppinen <iiro@jappinen.fi> (https://iiro.fi)",
