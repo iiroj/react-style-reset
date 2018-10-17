@@ -12,9 +12,6 @@
     "target": "es5"
   },
   "include": [
-    "./index.ts",
-    "./string.ts",
-    "./reset.css.object.ts",
-    "./reset.css.string.ts"
+    "./*.ts"
   ]
 }

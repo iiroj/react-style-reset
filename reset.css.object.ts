@@ -1,22 +1,25 @@
 // Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
 // TypeScript Version: 2.3
 
-import * as CSS from 'csstype';
+import * as CSS from "csstype";
 
-export type CSSBaseObject = CSS.PropertiesFallback<number | string>;
-export type CSSPseudoObject = { [K in CSS.Pseudos]?: CSSObject };
-export interface CSSOthersObject {
+type CSSBaseObject = CSS.PropertiesFallback<number | string>;
+type CSSPseudoObject = { [K in CSS.Pseudos]?: CSSObject };
+interface CSSOthersObject {
   [propertiesName: string]: Interpolation;
 }
-export interface CSSObject extends CSSBaseObject, CSSPseudoObject, CSSOthersObject {}
+interface CSSObject extends CSSBaseObject, CSSPseudoObject, CSSOthersObject {}
 
-export interface ArrayInterpolation extends Array<Interpolation> {}
+interface ArrayInterpolation extends Array<Interpolation> {}
 
-export type Interpolation =
-  | undefined | null | boolean | string | number
+type Interpolation =
+  | undefined
+  | null
+  | boolean
+  | string
+  | number
   | CSSObject
-  | ArrayInterpolation
-  ;
+  | ArrayInterpolation;
 
 export const reset: Interpolation = {
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -36,44 +39,41 @@ export const reset: Interpolation = {
     article, aside, canvas, details, embed,
     figure, figcaption, footer, header, hgroup,
     menu, nav, output, ruby, section, summary,
-    time, mark, audio, video`
-  ]: {
+    time, mark, audio, video`]: {
     margin: 0,
     padding: 0,
     border: 0,
-    fontSize: '100%',
-    font: 'inherit',
-    verticalAlign: 'baseline',
+    fontSize: "100%",
+    font: "inherit",
+    verticalAlign: "baseline"
   },
 
   // HTML5 display-role reset for older browsers
   [`article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section`
-  ]: {
-    display: 'block'
+    footer, header, hgroup, menu, nav, section`]: {
+    display: "block"
   },
 
   body: {
-    lineHeight: 1,
+    lineHeight: 1
   },
 
-  'ol, ul': {
-    listStyle: 'none',
+  "ol, ul": {
+    listStyle: "none"
   },
 
-  'blockquote, q': {
-    quotes: 'none',
+  "blockquote, q": {
+    quotes: "none"
   },
 
   [`blockquote::before, blockquote::after,
-    q::before, q::after`
-  ]: {
-    content: 'none',
+    q::before, q::after`]: {
+    content: "none"
   },
 
   table: {
-    borderCollapse: 'collapse',
-    borderSpacing: 0,
+    borderCollapse: "collapse",
+    borderSpacing: 0
   }
 };
 
