@@ -23,9 +23,13 @@
 
 ## Features
 
-This module includes Eric Meyer's Reset CSS 2.0 written as "object styles", to be easily used with [styled-component](https://www.styled-components.com/) and [emotion](https://emotion.sh/). Also included is a template literal version.
+This module includes [Eric Meyer's Reset CSS 2.0](https://meyerweb.com/eric/tools/css/reset/) written as "object styles", to be easily used with [styled-component](https://www.styled-components.com/) and [emotion](https://emotion.sh/). Also included is a template literal version.
+
+Also included is the popular [Normalize.css](https://necolas.github.io/normalize.css/), a modern HTML5-ready alternative to CSS resets, in both object and template literal versions.
 
 ## Usage
+
+## Reset.css
 
 With object styles:
 
@@ -51,9 +55,39 @@ const GlobalStyles = createGlobalStyle`
 `;
 ```
 
+## Normalize.css
+
+With object styles:
+
+```js
+import { normalize } from 'react-style-reset';
+import { injectGlobal } from 'emotion';
+
+injectGlobal(normalize, {
+  ...
+});
+```
+
+With template literal styles:
+
+```js
+import { normalize } from 'react-style-reset/string';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  ${normalize};
+
+  ...
+`;
+```
+
 ## Credits
 
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 License: none (public domain)
 
-Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
+normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
+
+## License
+
+MIT — see [LICENCE](LICENSE)
