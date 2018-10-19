@@ -1,10 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { injectGlobal } from "emotion";
+import { CSSObject } from "create-emotion";
 
 import reset from "../";
 
-injectGlobal(reset);
+injectGlobal(reset as CSSObject);
 
 const Example = () => (
   <div>

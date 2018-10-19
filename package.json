@@ -21,13 +21,6 @@
     "release": "git push --follow-tags origin master",
     "postrelease": "npm publish"
   },
-  "dependencies": {
-    "csstype": "^2.5.7"
-  },
-  "peerDependencies": {
-    "react": ">=16.3",
-    "react-dom": ">=16.3"
-  },
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
@@ -52,5 +45,6 @@
     "reset",
     "style",
     "styled-components"
-  ]
+  ],
+  "dependencies": {}
 }

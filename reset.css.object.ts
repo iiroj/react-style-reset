@@ -1,5 +1,3 @@
-import { Interpolation } from "./index";
-
 // http://meyerweb.com/eric/tools/css/reset/
 // v2.0 | 20110126
 // License: none (public domain)
@@ -29,7 +27,7 @@ const quotesNone = {
   quotes: "none"
 };
 
-const reset: Interpolation = {
+const reset = {
   a: generics,
   abbr: generics,
   acronym: generics,
