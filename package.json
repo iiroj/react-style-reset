@@ -17,26 +17,26 @@
     "lint": "tslint -p tsconfig.json",
     "build": "tsc --build tsconfig.json",
     "clean": "tsc --build --clean tsconfig.json",
+    "preversion": "npm run lint && npm run build",
     "version": "standard-version",
-    "prerelease": "npm run lint && npm run build",
-    "release": "git push --follow-tags origin master",
-    "postrelease": "npm publish"
+    "push": "git push --follow-tags origin master",
+    "prepublishOnly": "npm run version && npm run push"
   },
   "devDependencies": {
-    "@types/react": "^16.7.10",
+    "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
-    "emotion": "^10.0.0",
-    "parcel-bundler": "^1.10.3",
+    "emotion": "^10.0.5",
+    "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "standard-version": "^4.4.0",
-    "tslint": "^5.11.0",
+    "tslint": "^5.12.0",
     "tslint-config-prettier": "^1.17.0",
     "tslint-config-standard": "^8.0.1",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.2.1"
+    "typescript": "^3.2.2"
   },
   "keywords": [
     "css",
