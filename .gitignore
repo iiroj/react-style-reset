@@ -1,5 +1,8 @@
+/.rpt2_cache
 /.cache
-/node_modules
-/dist
 /*.d.ts
 /*.js
+/dist
+/node_modules
+
+!rollup.config.js

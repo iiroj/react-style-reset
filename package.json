@@ -8,15 +8,18 @@
   "repository": "gitlab:iiroj/react-style-reset",
   "bugs": "https://gitlab.com/iiroj/react-style-reset/issues",
   "main": "index.js",
+  "module": "index.esm.js",
+  "browser": "index.umd.js",
   "files": [
-    "*.d.ts",
-    "*.js"
+    "/*.d.ts",
+    "/*.js"
   ],
   "scripts": {
     "start": "parcel example/index.html",
     "lint": "tslint -p tsconfig.json",
-    "build": "tsc --build tsconfig.json",
-    "clean": "tsc --build --clean tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "watch": "rollup -cw",
+    "build": "rollup -c",
     "preversion": "npm run lint && npm run build",
     "version": "standard-version",
     "push": "git push --follow-tags origin master",
@@ -30,6 +33,11 @@
     "prettier": "^1.15.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "rollup": "^1.0.1",
+    "rollup-plugin-babel-minify": "^6.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.18.1",
     "standard-version": "^4.4.0",
     "tslint": "^5.12.0",
     "tslint-config-prettier": "^1.17.0",
@@ -46,6 +54,5 @@
     "reset",
     "style",
     "styled-components"
-  ],
-  "dependencies": {}
+  ]
 }
