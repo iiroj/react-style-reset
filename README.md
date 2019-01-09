@@ -2,19 +2,20 @@
   <h1 align="center">react-style-reset</h1>
   <p>An object-style CSS Reset for React.</p>
   <a href="https://www.npmjs.com/package/react-style-reset"><strong>npm</strong></a> ·
+  <a href="https://github.com/iiroj/react-style-reset"><strong>GitHub</strong></a> ·
   <a href="https://gitlab.com/iiroj/react-style-reset"><strong>GitLab</strong></a>
   <br/>
   <br/>
   <a href="https://www.npmjs.com/package/react-style-reset">
     <img src="https://img.shields.io/npm/v/react-style-reset.svg">
   </a>
-  <a href="https://gitlab.com/iiroj/react-style-reset">
+  <a href="https://github.com/iiroj/react-style-reset">
     <img src="https://img.shields.io/github/languages/code-size/iiroj/react-style-reset.svg">
   </a>
-  <a href="https://gitlab.com/iiroj/react-style-reset/blob/master/package.json">
+  <a href="https://github.com/iiroj/react-style-reset/blob/master/package.json">
     <img src="https://img.shields.io/david/iiroj/react-style-reset.svg">
   </a>
-  <a href="https://gitlab.com/iiroj/react-style-reset/blob/master/package.json">
+  <a href="https://github.com/iiroj/react-style-reset/blob/master/package.json">
     <img src="https://img.shields.io/david/dev/iiroj/react-style-reset.svg">
   </a>
   <br/>
