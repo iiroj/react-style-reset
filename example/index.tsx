@@ -1,11 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { injectGlobal } from "emotion";
-import { ObjectInterpolation } from "create-emotion";
 
 import reset from "../";
 
-injectGlobal(reset as ObjectInterpolation<any>);
+injectGlobal(reset);
 
 const Example = () => (
   <div>
