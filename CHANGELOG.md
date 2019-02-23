@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.2.0](https://github.com/iiroj/react-style-reset/compare/v1.1.9...v1.2.0) (2019-02-23)
+
+
+### Features
+
+* use eslint instead of tslint ([70caa51](https://github.com/iiroj/react-style-reset/commit/70caa51))
+
+
+
 <a name="1.1.9"></a>
 ## [1.1.9](https://github.com/iiroj/react-style-reset/compare/v1.1.8...v1.1.9) (2019-02-05)
 
