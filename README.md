@@ -1,5 +1,6 @@
 # react-style-reset
 
+[![CircleCI](https://circleci.com/gh/iiroj/react-style-reset.svg?style=shield)](https://circleci.com/gh/iiroj/react-style-reset)
 [![version](https://img.shields.io/npm/v/react-style-reset.svg)](https://www.npmjs.com/package/react-style-reset)
 [![code size](https://img.shields.io/github/languages/code-size/iiroj/react-style-reset.svg)](https://github.com/iiroj/react-style-reset)
 [![dependencies](https://img.shields.io/david/iiroj/react-style-reset.svg)](https://github.com/iiroj/react-style-reset/blob/master/package.json)
