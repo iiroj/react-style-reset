@@ -1,6 +1,6 @@
 import commonjs from "rollup-plugin-commonjs";
-import minify from "rollup-plugin-babel-minify";
 import resolve from "rollup-plugin-node-resolve";
+import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 
 import pkg from "./package.json";
@@ -9,7 +9,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 const plugins = [
   typescript({ typescript: require("typescript") }),
-  production && minify({ comments: false })
+  production && terser()
 ];
 
 const umdPlugins = [...plugins, resolve(), commonjs()];
