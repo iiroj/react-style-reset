@@ -14,21 +14,41 @@
     "/*.d.ts",
     "/*.js"
   ],
+  "sideEffects": false,
   "scripts": {
     "start": "parcel example/index.html",
-    "lint": "eslint . --ext .ts --ext .js",
+    "lint": "eslint --ext .js --ext .ts .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "watch": "rollup -cw",
     "build": "rollup -c",
-    "preversion": "npm run lint && npm run build",
-    "version": "standard-version",
-    "push": "git push --follow-tags origin master"
+    "version": "standard-version --no-verify"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "npm run lint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run lint && npm run build"
+    }
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^8.0.0",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
+    "commitlint": "^8.0.0",
     "emotion": "^10.0.14",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
@@ -38,6 +58,8 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
