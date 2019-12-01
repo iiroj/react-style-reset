@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.15](https://github.com/iiroj/react-style-reset/compare/v1.2.14...v1.2.15) (2019-12-01)
+
 ### [1.2.14](https://github.com/iiroj/react-style-reset/compare/v1.2.13...v1.2.14) (2019-09-25)
 
 ### [1.2.13](https://github.com/iiroj/react-style-reset/compare/v1.2.12...v1.2.13) (2019-09-22)
