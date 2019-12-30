@@ -26,7 +26,7 @@ export default [
       {
         exports: "named",
         file: pkg.module,
-        format: "es"
+        format: "esm"
       }
     ],
     plugins
@@ -41,8 +41,8 @@ export default [
       },
       {
         exports: "named",
-        file: "string.esm.js",
-        format: "es"
+        file: "string.mjs",
+        format: "esm"
       }
     ],
     plugins

@@ -8,11 +8,12 @@
   "repository": "github:iiroj/react-style-reset",
   "bugs": "https://github.com/iiroj/react-style-reset/issues",
   "main": "index.js",
-  "module": "index.esm.js",
+  "module": "index.mjs",
   "browser": "index.umd.js",
   "files": [
     "/*.d.ts",
-    "/*.js"
+    "/*.js",
+    "/*.mjs"
   ],
   "sideEffects": false,
   "scripts": {
