@@ -108,7 +108,7 @@ const reset = {
   sup: generics,
   table: {
     ...generics,
-    borderCollapse: "collapse" as "collapse",
+    borderCollapse: "collapse" as const,
     borderSpacing: 0
   },
   tbody: generics,
