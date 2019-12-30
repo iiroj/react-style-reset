@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/iiroj/react-style-reset/compare/v1.2.15...v1.3.0) (2019-12-30)
+
+
+### Features
+
+* use mjs extension for esm module ([6d91a99](https://github.com/iiroj/react-style-reset/commit/6d91a99c21ef04f32bdbabbd13ba3daf8b87137b))
+
 ### [1.2.15](https://github.com/iiroj/react-style-reset/compare/v1.2.14...v1.2.15) (2019-12-01)
 
 ### [1.2.14](https://github.com/iiroj/react-style-reset/compare/v1.2.13...v1.2.14) (2019-09-25)
