@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/iiroj/react-style-reset/compare/v1.3.1...v1.3.2) (2020-08-20)
+
+
+### Bug Fixes
+
+* use correct border-box instead of borderBox ([67fe9b0](https://github.com/iiroj/react-style-reset/commit/67fe9b0951bb899a3462659934c585dbb18ae0e9))
+
 ### [1.3.1](https://github.com/iiroj/react-style-reset/compare/v1.3.0...v1.3.1) (2020-03-14)
 
 ## [1.3.0](https://github.com/iiroj/react-style-reset/compare/v1.2.15...v1.3.0) (2019-12-30)
