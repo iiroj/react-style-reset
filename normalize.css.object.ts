@@ -2,73 +2,73 @@
 
 const monospace = {
   fontFamily: "monospace, monospace",
-  fontSize: "1em"
+  fontSize: "1em",
 };
 
 const input = {
   fontFamily: "inherit",
   fontSize: "100%",
   lineHeight: "1.15",
-  margin: "0"
+  margin: "0",
 };
 
 const button = {
   WebkitAppearance: "button",
   "&::-moz-focus-inner": {
     borderStyle: "none",
-    padding: "0"
+    padding: "0",
   },
   "&:-moz-focusring": {
-    outline: "1px dotted ButtonText"
-  }
+    outline: "1px dotted ButtonText",
+  },
 };
 
 const checkbox = {
   boxSizing: "borderBox",
-  padding: "0"
+  padding: "0",
 };
 
 const normalize = {
   html: {
     lineHeight: "1.15",
-    WebkitTextSizeAdjust: "100%"
+    WebkitTextSizeAdjust: "100%",
   },
 
   body: {
-    margin: "0"
+    margin: "0",
   },
 
   h1: {
     fontSize: "2em",
-    margin: "0.67em 0"
+    margin: "0.67em 0",
   },
 
   hr: {
     boxSizing: "content-box",
     height: "0",
-    overflow: "visible"
+    overflow: "visible",
   },
 
   pre: {
     fontFamily: "monospace, monospace",
-    fontSize: "1em"
+    fontSize: "1em",
   },
 
   a: {
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
 
   "abbr[title]": {
     borderBottom: "none",
     // textDecoration: 'underline',
-    textDecoration: "underline dotted"
+    textDecoration: "underline dotted",
   },
 
   strong: {
-    fontWeight: "bolder"
+    fontWeight: "bolder",
   },
   b: {
-    fontWeight: "bolder"
+    fontWeight: "bolder",
   },
 
   code: monospace,
@@ -76,7 +76,7 @@ const normalize = {
   sam: monospace,
 
   small: {
-    fontSize: "80%"
+    fontSize: "80%",
   },
 
   sub: {
@@ -84,7 +84,7 @@ const normalize = {
     fontSize: "75%",
     lineHeight: "0",
     position: "relative",
-    verticalAlign: "baseline"
+    verticalAlign: "baseline",
   },
 
   sup: {
@@ -92,11 +92,11 @@ const normalize = {
     lineHeight: "0",
     position: "relative",
     top: "-0.5em",
-    verticalAlign: "baseline"
+    verticalAlign: "baseline",
   },
 
   img: {
-    borderStyle: "none"
+    borderStyle: "none",
   },
 
   button: {
@@ -104,7 +104,7 @@ const normalize = {
     ...button,
     overflow: "visible",
     textTransform: "none",
-    WebkitAppearance: "button"
+    WebkitAppearance: "button",
   },
   input: { ...input, overflow: "visible" },
   optgroup: input,
@@ -116,7 +116,7 @@ const normalize = {
   '[type="submit"]': button,
 
   fieldset: {
-    padding: "0.35em 0.75em 0.625em"
+    padding: "0.35em 0.75em 0.625em",
   },
 
   legend: {
@@ -125,56 +125,56 @@ const normalize = {
     display: "table",
     maxWidth: "100%",
     padding: "0",
-    whiteSpace: "normal"
+    whiteSpace: "normal",
   },
 
   progress: {
-    verticalAlign: "baseline"
+    verticalAlign: "baseline",
   },
 
   textarea: {
-    overflow: "auto"
+    overflow: "auto",
   },
 
   '[type="checkbox"]': checkbox,
   '[type="radio"]': checkbox,
 
   '[type="number"]::-webkit-inner-spin-button': {
-    height: "auto"
+    height: "auto",
   },
   '[type="number"]::-webkit-outer-spin-button': {
-    height: "auto"
+    height: "auto",
   },
 
   '[type="search"]': {
     WebkitAppearance: "textfield",
-    outlineOffset: "-2px"
+    outlineOffset: "-2px",
   },
 
   '[type="search"]::-webkit-search-decoration': {
-    WebkitAppearance: '""'
+    WebkitAppearance: '""',
   },
 
   "::-webkit-file-upload-button": {
     WebkitAppearance: "button",
-    font: "inherit"
+    font: "inherit",
   },
 
   details: {
-    display: "block"
+    display: "block",
   },
 
   summary: {
-    display: "list-item"
+    display: "list-item",
   },
 
   template: {
-    display: "none"
+    display: "none",
   },
 
   "[hidden]": {
-    display: "none"
-  }
+    display: "none",
+  },
 };
 
 export default normalize;

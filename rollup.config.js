@@ -9,7 +9,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 const plugins = [
   typescript({ typescript: require("typescript") }),
-  production && terser()
+  production && terser(),
 ];
 
 const umdPlugins = [...plugins, resolve(), commonjs()];
@@ -21,15 +21,15 @@ export default [
       {
         exports: "named",
         file: pkg.main,
-        format: "cjs"
+        format: "cjs",
       },
       {
         exports: "named",
         file: pkg.module,
-        format: "esm"
-      }
+        format: "esm",
+      },
     ],
-    plugins
+    plugins,
   },
   {
     input: "string.ts",
@@ -37,15 +37,15 @@ export default [
       {
         exports: "named",
         file: "string.js",
-        format: "cjs"
+        format: "cjs",
       },
       {
         exports: "named",
         file: "string.mjs",
-        format: "esm"
-      }
+        format: "esm",
+      },
     ],
-    plugins
+    plugins,
   },
   {
     input: "index.ts",
@@ -53,9 +53,9 @@ export default [
       exports: "named",
       file: pkg.browser,
       format: "umd",
-      name: "reactStyleReset"
+      name: "reactStyleReset",
     },
-    plugins: umdPlugins
+    plugins: umdPlugins,
   },
   {
     input: "string.ts",
@@ -63,8 +63,8 @@ export default [
       exports: "named",
       file: "string.umd.js",
       format: "umd",
-      name: "reactStyleReset"
+      name: "reactStyleReset",
     },
-    plugins: umdPlugins
-  }
+    plugins: umdPlugins,
+  },
 ];

@@ -8,23 +8,23 @@ const generics = {
   border: 0,
   fontSize: "100%",
   font: "inherit",
-  verticalAlign: "baseline"
+  verticalAlign: "baseline",
 };
 
 const displayBlock = {
-  display: "block"
+  display: "block",
 };
 
 const listStyleNone = {
-  listStyle: "none"
+  listStyle: "none",
 };
 
 const contentNone = {
-  content: "none"
+  content: "none",
 };
 
 const quotesNone = {
-  quotes: "none"
+  quotes: "none",
 };
 
 const reset = {
@@ -42,7 +42,7 @@ const reset = {
     ...generics,
     ...quotesNone,
     "&::after": contentNone,
-    "&::before": contentNone
+    "&::before": contentNone,
   },
   body: { ...generics, lineHeight: 1 },
   canvas: generics,
@@ -93,7 +93,7 @@ const reset = {
     ...generics,
     ...quotesNone,
     "&::after": contentNone,
-    "&::before": contentNone
+    "&::before": contentNone,
   },
   ruby: generics,
   s: generics,
@@ -109,7 +109,7 @@ const reset = {
   table: {
     ...generics,
     borderCollapse: "collapse" as const,
-    borderSpacing: 0
+    borderSpacing: 0,
   },
   tbody: generics,
   td: generics,
@@ -122,7 +122,7 @@ const reset = {
   u: generics,
   ul: { ...generics, ...listStyleNone },
   var: generics,
-  video: generics
+  video: generics,
 };
 
 export default reset;
