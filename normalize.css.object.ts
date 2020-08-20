@@ -24,7 +24,7 @@ const button = {
 };
 
 const checkbox = {
-  boxSizing: "borderBox",
+  boxSizing: "border-box",
   padding: "0",
 };
 
